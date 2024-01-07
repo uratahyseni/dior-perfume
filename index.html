@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIOR PERFUME</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1 style="color: white; font-family:'Playfair Display', serif; font-size: 54px;">DIOR</h1></div>
+        <div class="lists">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#product-list">PRODUCTS</a></li>
+                <li><a href="#">REVIEWS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a class="last" href="./cart.html"><img width="30" height="30" style="transition: .4s all;" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png" alt="shopping-cart--v1"/></a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="home">
+        <div class="text">
+            <h1>Why choose Dior?</h1>
+            <p>Because Dior perfumes are not just scents; they are expressions of individuality, encapsulating the spirit of couture in every spray. Elevate your senses, make a statement, and embrace the luxury that is Dior.</p>
+            <a href="#product-list">SHOP NOW</a>
+        </div>
+    </main>
+    <div id="product-list" class="products">
+        <div data-id="1" data-name="VERSACE EROS" data-price="99.99" class="product1">
+            <img src="./dior perfumes/71I33Ob9-LL._SX466_-removebg-preview.png" alt="product">
+            <p>VERSACE EROS</p>
+            <p style="color: rgb(253, 117, 117);">99.99$</p>
+            <button onclick="addToCart(1)">ADD TO CART</button>
+        </div>
+        <div data-id="2" data-name="GRIS DIOR" data-price="49.99" class="product2">
+            <img src="./dior perfumes/elle-loves-gris-dior-644677a68415f-removebg-preview.png" alt="product">
+            <p>GRIS DIOR</p>
+            <p style="color: rgb(253, 117, 117);">49.99$</p>
+            <button onclick="addToCart(2)">ADD TO CART</button>
+        </div>
+        <div data-id="3" data-name="DIOR HOMME" data-price="149.99" class="product3">
+            <img src="./dior perfumes/ezgif-5-56209f44ad-removebg-preview.png" alt="product">
+            <p>DIOR HOMME</p>
+            <p style="color: rgb(253, 117, 117);">149.99$</p>
+            <button onclick="addToCart(3)">ADD TO CART</button>
+        </div>
+        <div data-id="4" data-name="LUCKY" data-price="129.99" class="product4">
+            <img src="./dior perfumes/ezgif-5-8ec03d5816-removebg-preview.png" alt="product">
+            <p>LUCKY</p>
+            <p style="color: rgb(253, 117, 117);">129.99$</p>
+            <button onclick="addToCart(4)">ADD TO CART</button>
+        </div>
+        <div data-id="5" data-name="J'adore" data-price="124.99" class="product5">
+            <img src="./dior perfumes/Y0996083_C099600084_E01_GHC-removebg-preview.png" alt="product">
+            <p>J'adore</p>
+            <p style="color: rgb(253, 117, 117);">124.99$</p>
+            <button onclick="addToCart(5)">ADD TO CART</button>
+        </div>
+        <div data-id="6" data-name="OUD ROSEWOOD" data-price="74.99" class="product6">
+            <img src="./dior perfumes/Y0996414_C099641476_E03_GHC-removebg-preview.png" alt="product">
+            <p>OUD ROSEWOOD</p>
+            <p style="color: rgb(253, 117, 117);">74.99$</p>
+            <button onclick="addToCart(6)">ADD TO CART</button>
+        </div>
+        <div data-id="7" data-name="SAUVAGE ELIXIR" data-price="99.99" class="product7">
+            <img src="./dior perfumes/Y0996460_C099600755_E01_GHC-removebg-preview.png" alt="product">
+            <p>SAUVAGE ELIXIR</p>
+            <p style="color: rgb(253, 117, 117);">99.99$</p>
+            <button onclick="addToCart(7)">ADD TO CART</button>
+        </div>
+        <div data-id="8" data-name="MISS DIOR" data-price="89.99" class="product8">
+            <img src="./dior perfumes/Y0996612_C099700102_E01_GHC-removebg-preview.png" alt="product">
+            <p>MISS DIOR</p>
+            <p style="color: rgb(253, 117, 117);">89.99$</p>
+            <button onclick="addToCart(8)">ADD TO CART</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

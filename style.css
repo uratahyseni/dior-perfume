@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #272932;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    -webkit-animation:slide-in-top 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top 1s cubic-bezier(.25,.46,.45,.94) both
+}
+@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+header .logo {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .lists {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+header .lists ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+header .lists ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .4s all;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+header .lists ul li a:hover {
+    background-color: white;
+    color: #272932;
+    border-radius: 100px;
+}
+header .lists ul li .last:hover{
+    background-color: #272932;
+}
+header .lists ul li .last:hover img{
+    width: 35px;
+    height: 35px;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./POSTER_DESKTOP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .text {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both
+}
+@-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+main .text p{
+    width: 50%;
+    margin: 10px 0 20px 0px;
+}
+main .text a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 7.5px 15px;
+    transition: .4s all;
+}
+main .text a:hover {
+    background-color: white;
+    color: #272932;
+}
+.products {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #272932;
+}
+.products div {
+    height: 320px;
+    width: 200px;
+    text-align: center;
+    color: #272932;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 75px -7px rgba(255,255,255,1);
+-webkit-box-shadow: 0px 0px 75px -7px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 75px -7px rgba(255,255,255,1);
+    border-radius: 20px;
+}
+.products div img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.products div p {
+    font-size: 18px;
+    margin: 0;
+}
+.products div button {
+    padding: 5px 15px;
+    background-color: #272932;
+    border: 0;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    transition: .4s all;
+    cursor: pointer;
+}
+.products div button:hover {
+    transform: scale(1.1);
+}
